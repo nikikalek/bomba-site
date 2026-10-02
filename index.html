@@ -34,7 +34,6 @@
             overflow-x: hidden;
         }
 
-        /* NAVBAR */
         nav {
             position: fixed;
             top: 0;
@@ -76,7 +75,6 @@
             color: var(--accent-orange);
         }
 
-        /* HERO SECTION */
         .hero {
             margin-top: 80px;
             min-height: 100vh;
@@ -169,7 +167,6 @@
             transform: translateY(-3px);
         }
 
-        /* FEATURES SECTION */
         .features {
             padding: 4rem 2rem;
             max-width: 1200px;
@@ -222,7 +219,6 @@
             color: var(--text-muted);
         }
 
-        /* VERSIONS SECTION */
         .versions {
             padding: 4rem 2rem;
             background: rgba(26, 31, 58, 0.5);
@@ -298,7 +294,6 @@
             margin: 1.5rem 0;
         }
 
-        /* FAQ SECTION */
         .faq {
             padding: 4rem 2rem;
             max-width: 900px;
@@ -365,7 +360,6 @@
             color: var(--text-muted);
         }
 
-        /* FOOTER */
         footer {
             background: var(--bg-panel);
             border-top: 1px solid var(--border-color);
@@ -408,7 +402,6 @@
             font-size: 0.9rem;
         }
 
-        /* RESPONSIVE */
         @media (max-width: 768px) {
             nav ul {
                 gap: 1rem;
@@ -466,7 +459,6 @@
     </style>
 </head>
 <body>
-    <!-- NAVBAR -->
     <nav>
         <div class="logo">💣 BOMBA MOD</div>
         <ul>
@@ -477,7 +469,6 @@
         </ul>
     </nav>
 
-    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
             <h1>BOMBA MOD</h1>
@@ -487,7 +478,6 @@
         </div>
     </section>
 
-    <!-- FEATURES SECTION -->
     <section class="features" id="features">
         <h2 class="section-title">Główne Funkcje</h2>
         <div class="features-grid">
@@ -524,7 +514,6 @@
         </div>
     </section>
 
-    <!-- VERSIONS SECTION -->
     <section class="versions" id="versions">
         <h2 class="section-title">Dostępne Wersje</h2>
         <div class="versions-grid">
@@ -571,7 +560,6 @@
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
     <section class="faq" id="faq">
         <h2 class="section-title">Często Zadawane Pytania</h2>
         <div class="faq-container">
@@ -623,7 +611,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-section">
@@ -665,7 +652,6 @@
     </footer>
 
     <script>
-        // FAQ Toggle
         const faqItems = document.querySelectorAll('.faq-item');
         faqItems.forEach(item => {
             item.querySelector('.faq-question').addEventListener('click', () => {
@@ -673,7 +659,6 @@
             });
         });
 
-        // Smooth scroll for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -684,7 +669,6 @@
             });
         });
 
-        // Button click handlers
         document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
             btn.addEventListener('click', function() {
                 alert('Dziękuję! Ta funkcja będzie wkrótce dostępna.');
